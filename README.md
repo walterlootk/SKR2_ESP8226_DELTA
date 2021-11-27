@@ -12,9 +12,9 @@ Period of main configuration: 10-11-2021 ~ 26-11-2021
 
 2) Changes made to the following:<br>
 ====================<br>
-A. Configuration.h
-B. Configuration_adv.h (no changes yet - just review)
-C. platformio.ini
+A. Configuration.h<br>
+B. Configuration_adv.h (no changes yet - just review)<br>
+C. platformio.ini<br>
 D. pins_BTT_SKR_V2_0_common.h
 
 
