@@ -42,7 +42,7 @@ line 1466 #define INVERT_Z_DIR false (default is ) true<br>
 line 1474 #define INVERT_E0_DIR false (default is ) true<br>
 line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
 line 1750 #define GRID_MAX_POINTS_X 9 (default)<br>
-line 1892 #define HOMING_FEEDRATE_MM_M { (60*60), (60*60), (60*60) }
+line 1892 #define HOMING_FEEDRATE_MM_M { (60&#42;60), (60&#42;60), (60&#42;60) }
 
 B) For Configuration_adv.h, the following were noted/changed.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
