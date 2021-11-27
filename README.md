@@ -1,6 +1,6 @@
-I have an AnyCubic Kossel Pulley 3D printer since April 2017. Sometime in August 2021 I got hold of an SKR 2 Rev B board and four TMC2209 drivers. Everything else has remain more or less the same.
+I have an AnyCubic Kossel Pulley 3D printer since April 2017. It has been working well. However, in August 2021, the 8-bit Trigorilla board died, hence initiating a motherboard replacement. On the same month, I got hold of an SKR 2 Rev B board, four TMC2209 v1.2 stepper motor drivers and a BTT ESP8266 WIFI Module ESP-12S. Everything else has remain more or less the same.
 
-It was also during this time the 8-bit Trigorilla board died, hence initiating the SKR2 replacement on my AnyCubic. Below were the changes that I made to the relevant configuration files to get the printer set up and all the bugs flushed out. Hope this helps someone, as I was helped many times by other contributors.
+Below were the changes that I made to the relevant configuration files to get the printer set up and all the bugs flushed out. Hope this helps someone, as I was helped many times by other contributors.
 
 Marlin Configuration - for AnyCubic Kossel Pulley DELTA Printer<br>
 Period of main configuration: 10-11-2021 ~ 26-11-2021
@@ -76,7 +76,12 @@ E) Wiring of my existing Delta's Mechanical Endstops<br>
 ===================================<br>
 Common and NC (default Anycubic 2017) wiring, therefore I am using GND/PC1(X), GND/PC3(Y), GND/PC0(Z) on the SKR 2.0 board
 
-F) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
+F) Installation of the BTT ESP8266 ESP-12S Module
+========================<br>
+1. Switch off the power to the Delta printer
+2. Follow the colour code of RED and BLACK and plug into the WIFI receptor
+
+G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
 =================================<br>
 1. Go to Installing PlatformIO IDE Extension on VS Code, if you have not done so.
 
@@ -86,7 +91,7 @@ F) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
 3. For Board: Espressif ESP8266 ESP-12E<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- although I am using a ESP-12S BTT module
 
-G) ESP3D-WEBUI / ESP3D-2.1.1<br>
+H) ESP3D-WEBUI / ESP3D-2.1.1<br>
 =================<br>
 1. Compile the source code<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure it is error-free
