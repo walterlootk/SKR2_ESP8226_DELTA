@@ -30,6 +30,8 @@ line 150 #define MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B<br>
 line 154 #define CUSTOM_MACHINE_NAME "ANYCUBIC Kossel SKR2"<br>
 line 797 //#define DELTA_HOME_TO_SAFE_ZONE (default is ENABLED) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- to prevent printhead from going down 70mm after homing (in my case)<br>
+line 848 #define DELTA_HEIGHT 296.20 (from 320 to 296.20, via manual calibration)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after manually "paper-level" the height, the auto calibration grid works<br>
 line 958 #define X_DRIVER_TYPE  TMC2209<br>
 line 959 #define Y_DRIVER_TYPE  TMC2209<br>
 line 960 #define Z_DRIVER_TYPE  TMC2209<br>
@@ -38,13 +40,15 @@ line 1068 #define DEFAULT_ACCELERATION          2000<br>
 line 1070 #define DEFAULT_TRAVEL_ACCELERATION   2000<br>
 line 1137 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- DISABLED in order to use V2 Probe on PE4 else it crashes into BED<br>
+line 1371 #define MULTIPLE_PROBING 3 (default is disable & 2)<br>
 line 1464 #define INVERT_X_DIR false (default is ) true<br>
 line 1465 #define INVERT_Y_DIR false (default is ) true<br>
 line 1466 #define INVERT_Z_DIR false (default is ) true<br>
 line 1474 #define INVERT_E0_DIR false (default is ) true<br>
 line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
-line 1750 #define GRID_MAX_POINTS_X 9 (default)<br>
-line 1892 #define HOMING_FEEDRATE_MM_M { (60&#42;60), (60&#42;60), (60&#42;60) }
+line 1719 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
+line 1750 #define GRID_MAX_POINTS_X 5 (default is 9)<br>
+line 1892 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }
 
 B) For Configuration_adv.h, the following were noted/changed.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
