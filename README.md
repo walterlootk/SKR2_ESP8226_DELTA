@@ -36,7 +36,8 @@ line 960 #define Z_DRIVER_TYPE  TMC2209<br>
 line 969 #define E0_DRIVER_TYPE TMC2209<br>
 line 1068 #define DEFAULT_ACCELERATION          2000<br>
 line 1070 #define DEFAULT_TRAVEL_ACCELERATION   2000<br>
-line 1137 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN - DISABLED in order to use V2 Probe on PE4
+line 1137 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- DISABLED in order to use V2 Probe on PE4 else it crashes into BED<br>
 line 1464 #define INVERT_X_DIR false (default is ) true<br>
 line 1465 #define INVERT_Y_DIR false (default is ) true<br>
 line 1466 #define INVERT_Z_DIR false (default is ) true<br>
