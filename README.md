@@ -53,6 +53,12 @@ line 1892 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }
 B) For Configuration_adv.h, the following were noted/changed.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
 =================================<br>
+line 589 #define E0_AUTO_FAN_PIN FAN1_PIN (for Hotend FAN1, see line 601)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- as FAN_PIN is default defined for FAN0 -Parts Fan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- using FAN1_PIN instead of PB6 is easier to read<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- COOLER_AUTO_FAN_PIN is for laser fan use only<br>
+line 601 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50 (default value)<br>
+line 602 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed (default value)<br>
 line 1142 #define MICROSTEP_MODES { 16, 16, 16, 16, 16, 16 } // [1,2,4,8,16] *unchanged*<br>
 line 2598   #define X_CURRENT       800    *unchanged*<br>
 line 2616   #define Y_CURRENT       800    *unchanged*<br>
