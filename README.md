@@ -30,6 +30,7 @@ line 150 #define MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B<br>
 line 154 #define CUSTOM_MACHINE_NAME "ANYCUBIC Kossel SKR2"<br>
 line 797 //#define DELTA_HOME_TO_SAFE_ZONE (default is ENABLED) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- to prevent printhead from going down 70mm after homing (in my case)<br>
+line 813 #define DELTA_CALIBRATION_DEFAULT_POINTS 6 (from 4 to 6)<br>
 line 848 #define DELTA_HEIGHT 296.20 (from 320 to 296.20, via manual calibration)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- after manually "paper-level" the height, the auto calibration grid works<br>
 line 958 #define X_DRIVER_TYPE  TMC2209<br>
