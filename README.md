@@ -3,12 +3,11 @@ I have an AnyCubic Kossel Pulley 3D printer since April 2017. It has been workin
 Below were the changes that I made to the relevant configuration files to get the printer set up and all the bugs flushed out. Hope this helps someone, as I was helped many times by other contributors.
 
 Marlin Configuration - for AnyCubic Kossel Pulley DELTA Printer<br>
-Period of main configuration: 10-11-2021 ~ 26-11-2021
 
 1) Marlin Firmware<br>
 ==========<br>
-1.1 Configuration Samples version date: 04-10-2021, extracted from: https://github.com/MarlinFirmware/Configurations/archive/refs/tags/2.0.9.2.zip<br>
-1.2 Marlin firmware from Marlin Website, is Marlin 2.0.9.2
+1.1 Configuration Samples version date: 30-11-2021, extracted from:https://github.com/MarlinFirmware/Configurations/config/examples/delta/Anycubic/Kossel/<br>
+1.2 Marlin BugFix 2.0.x firmware from Marlin Website, https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x
 
 2) Changes made to the following:<br>
 ====================<br>
@@ -26,6 +25,7 @@ line 33 #define ANYCUBIC_PROBE_VERSION 2<br>
 line 39 #define ANYCUBIC_KOSSEL_ENABLE_BED 1<br>
 line 113 #define SERIAL_PORT 3 (for Wifi module)<br>
 line 134 #define SERIAL_PORT_2 -1 (enabled for USB Connection)<br>
+line 135 #define BAUDRATE_2 250000 (enabled for USB Connection)<br>
 line 150 #define MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B<br>
 line 154 #define CUSTOM_MACHINE_NAME "ANYCUBIC Kossel SKR2"<br>
 line 797 //#define DELTA_HOME_TO_SAFE_ZONE (default is ENABLED) <br>
@@ -41,19 +41,25 @@ line 1068 #define DEFAULT_ACCELERATION          2000<br>
 line 1070 #define DEFAULT_TRAVEL_ACCELERATION   2000<br>
 line 1137 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- DISABLED in order to use V2 Probe on PE4 else it crashes into BED<br>
-line 1371 #define MULTIPLE_PROBING 3 (default is disable & 2)<br>
-line 1464 #define INVERT_X_DIR false (default is ) true<br>
-line 1465 #define INVERT_Y_DIR false (default is ) true<br>
-line 1466 #define INVERT_Z_DIR false (default is ) true<br>
-line 1474 #define INVERT_E0_DIR false (default is ) true<br>
+line 1315 #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -16.208 } (default=-19.80)<br>
+line 1473 #define INVERT_X_DIR false (default is ) true<br>
+line 1474 #define INVERT_Y_DIR false (default is ) true<br>
+line 1474 #define INVERT_Z_DIR false (default is ) true<br>
+line 1483 #define INVERT_E0_DIR false (default is ) true<br>
 line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
-line 1719 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
+line 1728 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
 line 1750 #define GRID_MAX_POINTS_X 5 (default is 9)<br>
-line 1892 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }
+line 1901 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }<br>
+line 2018 #define PREHEAT_2_TEMP_HOTEND 230 (from 240)<br>
+line 2019 #define PREHEAT_2_TEMP_BED    90 (from 110)<br>
 
 B) For Configuration_adv.h, the following were noted/changed.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
 =================================<br>
+line 501 #define USE_CONTROLLER_FAN (enable this controller for drivers cooling fan)<br>
+line 503 #define CONTROLLER_FAN_PIN FAN2_PIN (enable & set to FAN2_PIN. default -1)<br>
+line 507 #define CONTROLLERFAN_SPEED_ACTIVE    180 (default = 255)<br>
+line 509 #define CONTROLLERFAN_IDLE_TIME        20 (default is 60)<br>
 line 589 #define E0_AUTO_FAN_PIN FAN1_PIN (for Hotend FAN1, see line 601)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- as FAN_PIN is default defined for FAN0 -Parts Fan<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- using FAN1_PIN instead of PB6 is easier to read<br>
