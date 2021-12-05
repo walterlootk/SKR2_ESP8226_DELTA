@@ -60,8 +60,9 @@ line 2019 #define PREHEAT_2_TEMP_BED    90 (from 110)<br>
 B) For Configuration_adv.h, the following were noted/changed.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
 =================================<br>
-line 501 #define USE_CONTROLLER_FAN (enable this controller for drivers cooling fan)<br>
+line 501 #define USE_CONTROLLER_FAN (enable this controller for the TMC2209 drivers cooling fan)<br>
 line 503 #define CONTROLLER_FAN_PIN FAN2_PIN (enable & set to FAN2_PIN. default -1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- this means I am using PB5. You can type in PB5 or FAN2_PIN<br>
 line 507 #define CONTROLLERFAN_SPEED_ACTIVE    180 (default = 255)<br>
 line 509 #define CONTROLLERFAN_IDLE_TIME        20 (default is 60)<br>
 line 589 #define E0_AUTO_FAN_PIN FAN1_PIN (for Hotend FAN1, see line 601)<br>
@@ -99,7 +100,7 @@ E) Wiring of my existing Delta's Mechanical Endstops<br>
 ===================================<br>
 Common and NC (default Anycubic 2017) wiring, therefore I am using GND/PC1(X), GND/PC3(Y), GND/PC0(Z) on the SKR 2.0 board
 
-F) Installation of the BTT ESP8266 ESP-12S Module
+F) Installation of the BTT ESP8266 ESP-12S Module<br>
 ========================<br>
 1. Switch off the power to the Delta printer
 2. Follow the colour code of RED and BLACK and plug into the WIFI receptor
