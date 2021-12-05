@@ -64,6 +64,7 @@ line 501 #define USE_CONTROLLER_FAN (enable this controller for the TMC2209 driv
 line 503 #define CONTROLLER_FAN_PIN FAN2_PIN (enable & set to FAN2_PIN. default -1)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- this means I am using PB5. You can type in PB5 or FAN2_PIN<br>
 line 507 #define CONTROLLERFAN_SPEED_ACTIVE    180 (default = 255)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- I am setting about half-strength so that it is not too noisy (old fan)<br>
 line 509 #define CONTROLLERFAN_IDLE_TIME        20 (default is 60)<br>
 line 589 #define E0_AUTO_FAN_PIN FAN1_PIN (for Hotend FAN1, see line 601)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- as FAN_PIN is default defined for FAN0 -Parts Fan<br>
