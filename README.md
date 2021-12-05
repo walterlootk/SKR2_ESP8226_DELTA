@@ -6,8 +6,8 @@ Marlin Configuration - for AnyCubic Kossel Pulley DELTA Printer<br>
 
 1) Marlin Firmware<br>
 ==========<br>
-1.1 Configuration Samples version date: 30-11-2021, extracted from:https://github.com/MarlinFirmware/Configurations/config/examples/delta/Anycubic/Kossel/<br>
-1.2 Marlin BugFix 2.0.x firmware from Marlin Website, https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x
+1.1 Marlin BugFix 2.0.x firmware from Marlin Website, https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x<br>
+1.2 Configuration Samples version date: 30-11-2021, extracted from:https://github.com/MarlinFirmware/Configurations/config/examples/delta/Anycubic/Kossel/
 
 2) Changes made to the following:<br>
 ====================<br>
