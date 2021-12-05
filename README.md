@@ -85,8 +85,9 @@ line 17 default_envs = BIGTREE_SKR_2
 
 D) For pins_BTT_SKR_V2_0_common.h<br>
 ====================<br>
-1) Commented out line 41 "#define FLASH_EEPROM_EMULATION"
-
+1) Commented out line 41 "#define FLASH_EEPROM_EMULATION"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This causes Marlin to use back the internal SD card as the persistent storage, with the file EEPROM.dat<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- my time there were bugs. Maybe it is okay to use this in future (store in EEPROM rather than on EEPROM.dat)
 2) I added #define Z_MIN_PIN Z_STOP_PIN so it looks like this now:
 
 line 129 //<br>
