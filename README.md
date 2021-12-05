@@ -47,6 +47,10 @@ line 1474 #define INVERT_Y_DIR false (default is ) true<br>
 line 1474 #define INVERT_Z_DIR false (default is ) true<br>
 line 1483 #define INVERT_E0_DIR false (default is ) true<br>
 line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- at this particular Bugfix version, using Bilinear, my Pronterface can't access the printer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- however, when I switched over to AUTO_BED_LEVELING_UBL, Pronterface is able to communicate with the printer!!!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- anyway, I will be using the LEVELING_UBL as my glass bed is not flat after heated up.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ESP-12S WIFI module is doing good in tandem with the USB access.<br>
 line 1728 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
 line 1750 #define GRID_MAX_POINTS_X 5 (default is 9)<br>
 line 1901 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }<br>
