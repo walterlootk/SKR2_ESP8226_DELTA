@@ -53,10 +53,10 @@ line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- anyway, I will be using the LEVELING_UBL as my glass bed is not flat after heated up.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ESP-12S WIFI module is doing good in tandem with the USB access.<br>
 line 1728 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
-line 1750 #define GRID_MAX_POINTS_X 5 (default is 9)<br>
+line 1750 #define GRID_MAX_POINTS_X 9 (default is 9)<br>
 line 1901 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }<br>
 line 2018 #define PREHEAT_2_TEMP_HOTEND 230 (from 240)<br>
-line 2019 #define PREHEAT_2_TEMP_BED    90 (from 110)<br>
+line 2019 #define PREHEAT_2_TEMP_BED    100 (from 110)<br>
 
 B) For Configuration_adv.h, the following were noted/changed.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
@@ -68,7 +68,8 @@ line 507 #define CONTROLLERFAN_SPEED_ACTIVE    180 (default = 255)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- I am setting about half-strength so that it is not too noisy (old fan)<br>
 line 509 #define CONTROLLERFAN_IDLE_TIME        20 (default is 60)<br>
 line 589 #define E0_AUTO_FAN_PIN FAN1_PIN (for Hotend FAN1, see line 601)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- as FAN_PIN is default defined for FAN0 -Parts Fan<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- as FAN_PIN is default defined for FAN0 -Parts Fan BUT<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure Cooling Fan Number in Cura is set to "0" otherwise no fan during print<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- using FAN1_PIN instead of PB6 is easier to read<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- COOLER_AUTO_FAN_PIN is for laser fan use only<br>
 line 601 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50 (default value)<br>
