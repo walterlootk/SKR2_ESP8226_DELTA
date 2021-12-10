@@ -50,8 +50,9 @@ line 1483 #define INVERT_E0_DIR false (default is ) true<br>
 line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- at this particular Bugfix version, using Bilinear, my Pronterface can't access the printer<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- however, when I switched over to AUTO_BED_LEVELING_UBL, Pronterface is able to communicate with the printer!!!<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- anyway, I will be using the LEVELING_UBL as my glass bed is not flat after heated up.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ESP-12S WIFI module is doing good in tandem with the USB access.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- anyway, I will not be using the LEVELING_UBL as it generates thermal faults (printer HALT) for both extruder and bed,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- just by enabling the option itself. Maybe in future versions.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- USB access (Pronterface) is good in tandem with the ESP-12S WIFI module only if LEVELING_UBL is enabled.<br>
 line 1728 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
 line 1750 #define GRID_MAX_POINTS_X 9 (default is 9)<br>
 line 1778 #define BILINEAR_SUBDIVISIONS 5 (default is 3)<br>
@@ -69,9 +70,10 @@ line 507 #define CONTROLLERFAN_SPEED_ACTIVE    180 (default = 255)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- I am setting about half-strength so that it is not too noisy (old fan)<br>
 line 509 #define CONTROLLERFAN_IDLE_TIME        20 (default is 60)<br>
 line 589 #define E0_AUTO_FAN_PIN FAN1_PIN (for Hotend FAN1, see line 601)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- using FAN1_PIN instead of PB6 is easier to read<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- as FAN_PIN is default defined for FAN0 -Parts Fan BUT<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure Cooling Fan Number in Cura is set to "0" otherwise no fan during print<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- using FAN1_PIN instead of PB6 is easier to read<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- I have an enclosure yet still need to enable 100% FAN0 else soggy printing.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- COOLER_AUTO_FAN_PIN is for laser fan use only<br>
 line 601 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50 (default value)<br>
 line 602 #define EXTRUDER_AUTO_FAN_SPEED 255   // 255 == full speed (default value)<br>
