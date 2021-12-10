@@ -54,6 +54,7 @@ line 1681 #define AUTO_BED_LEVELING_BILINEAR (default)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ESP-12S WIFI module is doing good in tandem with the USB access.<br>
 line 1728 #define ENABLE_LEVELING_FADE_HEIGHT (default=disable)<br>
 line 1750 #define GRID_MAX_POINTS_X 9 (default is 9)<br>
+line 1778 #define BILINEAR_SUBDIVISIONS 5 (default is 3)<br>
 line 1901 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }<br>
 line 2018 #define PREHEAT_2_TEMP_HOTEND 230 (from 240)<br>
 line 2019 #define PREHEAT_2_TEMP_BED    100 (from 110)<br>
