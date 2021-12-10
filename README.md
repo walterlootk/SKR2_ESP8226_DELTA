@@ -24,6 +24,7 @@ A) For Configuration.h, the following were done:<br>
 line 33 #define ANYCUBIC_PROBE_VERSION 2<br>
 line 39 #define ANYCUBIC_KOSSEL_ENABLE_BED 1<br>
 line 113 #define SERIAL_PORT 3 (for Wifi module)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- wifi won't work if reversed with serial_port_2<br>
 line 134 #define SERIAL_PORT_2 -1 (enabled for USB Connection)<br>
 line 135 #define BAUDRATE_2 250000 (enabled for USB Connection)<br>
 line 150 #define MOTHERBOARD BOARD_BTT_SKR_V2_0_REV_B<br>
