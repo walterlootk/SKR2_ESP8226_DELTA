@@ -42,7 +42,7 @@ line 1068 #define DEFAULT_ACCELERATION          2000<br>
 line 1070 #define DEFAULT_TRAVEL_ACCELERATION   2000<br>
 line 1137 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- DISABLED in order to use V2 Probe on PE4 else it crashes into BED<br>
-line 1315 #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -16.208 } (default=-19.80)<br>
+line 1315 #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -16.80 } (actual=-16.73)<br>
 line 1473 #define INVERT_X_DIR false (default is ) true<br>
 line 1474 #define INVERT_Y_DIR false (default is ) true<br>
 line 1474 #define INVERT_Z_DIR false (default is ) true<br>
