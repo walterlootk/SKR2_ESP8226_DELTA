@@ -127,6 +127,7 @@ H) ESP3D-WEBUI / ESP3D-2.1.1<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure it is error-free
 
 2. Copy firmware.bin file to the mSDCard
+   - ESPD >ESPD3D-2.1.1 >.pioenvs >esp8266
 
 3. Rename the firmware.bin to esp3d.bin
 
