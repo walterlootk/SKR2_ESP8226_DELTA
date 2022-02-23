@@ -113,12 +113,14 @@ F) Installation of the BTT ESP8266 ESP-12S Module<br>
 
 G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
 =================================<br>
-1. Go to Installing PlatformIO IDE Extension on VS Code, if you have not done so.
+1. You may download the latest version here: https://github.com/luc-github/ESP3D/releases<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- which comes with the ESP3D-WEBUI as well.<br>
+2. Go to Installing PlatformIO IDE Extension on VS Code, if you have not done so.
 
-2. Go further down to create a New Project or add New Folder<br>
+3. Go further down to create a New Project or add New Folder<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- this is to make sure you do not mix this project with the SKR2 motherboard project
 
-3. For Board: Espressif ESP8266 ESP-12E<br>
+4. For Board: Espressif ESP8266 ESP-12E<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- although I am using a ESP-12S BTT module
 
 H) ESP3D-WEBUI / ESP3D-2.1.1<br>
