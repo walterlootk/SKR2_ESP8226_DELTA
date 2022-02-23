@@ -113,7 +113,7 @@ F) Installation of the BTT ESP8266 ESP-12S Module<br>
 
 G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
 =================================<br>
-1. You may download the latest version here: https://github.com/luc-github/ESP3D/releases<br>
+1. You may download the latest ESP3D firmware version here: https://github.com/luc-github/ESP3D/releases<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- which comes with the ESP3D-WEBUI as well.<br>
 2. Go to Installing PlatformIO IDE Extension on VS Code, if you have not done so.
 
@@ -129,7 +129,7 @@ H) ESP3D-WEBUI / ESP3D-2.1.1<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure it is error-free
 
 2. Copy firmware.bin file to the mSDCard
-   - ESPD >ESPD3D-2.1.1 >.pioenvs >esp8266
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ESPD >ESPD3D-2.1.1 >.pioenvs >esp8266
 
 3. Rename the firmware.bin to esp3d.bin
 
