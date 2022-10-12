@@ -167,6 +167,8 @@ Common and NC (default Anycubic 2017) wiring, therefore I am using GND/PC1(X), G
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Input your inhouse wifi SSID and Password<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is so that your Delta's wifi module now accesses your local network as a client, rather than having its own AP ip address)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Make other changes, if you want to, such as DHCP or Static IP address<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- It is important  that you configure the AP parameters and password as in future you might<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;need this module to act as an AP, for some reasons, securely (see appendix (I))<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- you should be able to connect to your Delta within your own network
 
 Finally ESP3D-WEBUI set up.
