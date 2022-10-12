@@ -15,7 +15,12 @@ Marlin Configuration - for AnyCubic Kossel Pulley DELTA Printer<br>
 A. Configuration.h<br>
 B. Configuration_adv.h (no changes yet - just review)<br>
 C. platformio.ini<br>
-D. pins_BTT_SKR_V2_0_common.h
+D. pins_BTT_SKR_V2_0_common.h<br>
+E. Wiring of my existing Delta's Mechanical Endstops<br>
+F. Installation of the BTT ESP8266 ESP-12S Module<br>
+G. Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
+H. ESP3D-WEBUI / ESP3D-2.1.1 Setup<br>
+I. ESP3D Wireless Access Bonus
 
 
 A) For Configuration.h, the following were done:<br>
@@ -124,7 +129,7 @@ G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
 4. For Board: Espressif ESP8266 ESP-12E<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- although I am using a ESP-12S BTT module
 
-H) ESP3D-WEBUI / ESP3D-2.1.1<br>
+H) ESP3D-WEBUI / ESP3D-2.1.1 Setup<br>
 =================<br>
 1. Compile the source code<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure it is error-free
@@ -165,6 +170,18 @@ H) ESP3D-WEBUI / ESP3D-2.1.1<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- you should be able to connect to your Delta within your own network
 
 Finally ESP3D-WEBUI set up.
+
+I. ESP3D Wireless Access Bonus
+========================<br>
+1. If you have a PC or laptop that has a wired LAN & Wifi ports and it is near to your 3D printer (maybe because you shifted the 3D printer)<br>
+2. If your router's wireless reach is too far and your 3D printer can't reach the router's Wifi SSID (maybe because you shifted the 3D printer)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Boot up your 3D printer as usual. It should show 192.168.0.1 or whatever its default IP address<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Let it be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- On your PC, select the ESP3D wireless connection (802.11g, 2.4Ghz, 192.168.0.1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- On your browser, type in http://192.168.0.1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- You should be able to access your 3D printer and do the usual configurations/access the printer, if needed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- And because your PC is connected to the wired LAN, you should also be able to access your Internet<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Best of both world.
 
 <!---
 walterlootk/walterlootk is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
