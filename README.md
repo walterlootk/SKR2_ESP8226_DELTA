@@ -177,9 +177,10 @@ Finally ESP3D-WEBUI set up.
 ========================<br>
 1. If you have a PC or laptop that has a wired LAN & Wifi ports and it is near to your 3D printer (maybe because you shifted the 3D printer)<br>
 2. If your router's wireless reach is too far and your 3D printer can't reach the router's Wifi SSID (maybe because you shifted the 3D printer)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Boot up your 3D printer as usual. It should show 192.168.0.1 or<br> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whatever its default IP address, since it can't access the router's wifi<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it has become an independant AP and will act as a DHCP server<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Boot up your 3D printer as usual. LCD panel will display "Connecting.. Disconnected...", then " No SSID..."<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Eventually, it should display its own assigned ip address, 192.168.0.1 or<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whatever its default ip address, since it can't access the router's wifi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- It has now become an independant AP and will act as a DHCP server<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Let it be<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- On your PC, select the ESP3D wireless connection (802.11g, 2.4Ghz, 192.168.0.1)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- On your browser, type in http://192.168.0.1<br>
