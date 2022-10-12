@@ -23,7 +23,7 @@ H. ESP3D-WEBUI / ESP3D-2.1.1 Setup<br>
 I. ESP3D Wireless Access Bonus
 
 
-A) For Configuration.h, the following were done:<br>
+<B>A) For Configuration.h, the following were done:<br></B>
 ================================<br>
 ** line numbers are closely approximate.
 
@@ -66,7 +66,7 @@ line 1901 #define HOMING_FEEDRATE_MM_M { (50&#42;60), (50&#42;60), (50&#42;60) }
 line 2018 #define PREHEAT_2_TEMP_HOTEND 230 (from 240)<br>
 line 2019 #define PREHEAT_2_TEMP_BED    100 (from 110)<br>
 
-B) For Configuration_adv.h, the following were noted/changed.<br>
+<B>B) For Configuration_adv.h, the following were noted/changed.<br></B>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guideline from https://www.lpomykal.cz/anycubic-kossel-skr-1-3-upgrade/<br>
 =================================<br>
 line 501 #define USE_CONTROLLER_FAN (enable this controller for the TMC2209 drivers cooling fan)<br>
@@ -90,11 +90,11 @@ line 2634   #define Z_CURRENT       800    *unchanged*<br>
 line 2697   #define E0_CURRENT      950    from 800   <br>   
 line 4044   //#define WIFISUPPORT          (default)
 
-C) For platformio.ini, this was updated:<br>
+<B>C) For platformio.ini, this was updated:<br></B>
 =======================<br>
 line 17 default_envs = BIGTREE_SKR_2
 
-D) For pins_BTT_SKR_V2_0_common.h [Marlin/src/pins/stm32f4]<br>
+<B>D) For pins_BTT_SKR_V2_0_common.h [Marlin/src/pins/stm32f4]<br></B>
 ================================<br>
 1) Commented out line 41 "#define FLASH_EEPROM_EMULATION"<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- This causes Marlin to use back the internal SD card as the persistent storage, with the file EEPROM.dat<br>
@@ -108,16 +108,16 @@ line 133  #define Z_MIN_PROBE_PIN                   PE4<br>
 line 134  #define Z_MIN_PIN Z_STOP_PIN<br>
 line 135 #endif
 
-E) Wiring of my existing Delta's Mechanical Endstops<br>
+<B>E) Wiring of my existing Delta's Mechanical Endstops<br></B>
 ===================================<br>
 Common and NC (default Anycubic 2017) wiring, therefore I am using GND/PC1(X), GND/PC3(Y), GND/PC0(Z) on the SKR 2.0 board
 
-F) Installation of the BTT ESP8266 ESP-12S Module<br>
+<B>F) Installation of the BTT ESP8266 ESP-12S Module<br></B>
 ========================<br>
 1. Switch off the power to the Delta printer
 2. Follow the colour code of RED and BLACK and plug into the WIFI receptor
 
-G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
+<B>G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br></B>
 =================================<br>
 1. You may download the latest ESP3D firmware version here: https://github.com/luc-github/ESP3D/releases<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- which comes with the ESP3D-WEBUI as well.<br>
@@ -129,7 +129,7 @@ G) Compilation of BTT ESP8266-ESP-12S Wifi module [4MB]<br>
 4. For Board: Espressif ESP8266 ESP-12E<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- although I am using a ESP-12S BTT module
 
-H) ESP3D-WEBUI / ESP3D-2.1.1 Setup<br>
+<B>H) ESP3D-WEBUI / ESP3D-2.1.1 Setup<br></B>
 =================<br>
 1. Compile the source code<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- make sure it is error-free
@@ -171,7 +171,7 @@ H) ESP3D-WEBUI / ESP3D-2.1.1 Setup<br>
 
 Finally ESP3D-WEBUI set up.
 
-<B>I. ESP3D Wireless Access Bonus<br></B>
+<B>I) ESP3D Wireless Access Bonus<br></B>
 ========================<br>
 1. If you have a PC or laptop that has a wired LAN & Wifi ports and it is near to your 3D printer (maybe because you shifted the 3D printer)<br>
 2. If your router's wireless reach is too far and your 3D printer can't reach the router's Wifi SSID (maybe because you shifted the 3D printer)<br>
