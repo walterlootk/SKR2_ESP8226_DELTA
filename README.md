@@ -171,7 +171,7 @@ H) ESP3D-WEBUI / ESP3D-2.1.1 Setup<br>
 
 Finally ESP3D-WEBUI set up.
 
-I. ESP3D Wireless Access Bonus
+<B>I. ESP3D Wireless Access Bonus<br></B>
 ========================<br>
 1. If you have a PC or laptop that has a wired LAN & Wifi ports and it is near to your 3D printer (maybe because you shifted the 3D printer)<br>
 2. If your router's wireless reach is too far and your 3D printer can't reach the router's Wifi SSID (maybe because you shifted the 3D printer)<br>
